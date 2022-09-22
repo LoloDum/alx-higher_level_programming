@@ -1,10 +1,7 @@
 #!/usr/bin/python3
-# lst = ["{:02d}".format(a) for a in range(100)]
-for a in range(10):
-    for b in range(10):
-        if a >= b:
-            continue
-        elif a == 8 and b == 9:
-            print("{}{}".format(a, b))
-        else:
-            print("{}{}".format(a, b), end=", ")
+number = 0
+while number <= 89:
+    if number % 10 == 0:
+        number += 1 + number // 10
+    print("{:02d}".format(number), end='\n' if number == 89 else ", ")
+    number += 1
