@@ -17,4 +17,4 @@ if (arrayNumbers.length > 1) {
   biggest = Math.max.apply(null, arrayNumbers);
 }
 
-console.log(biggest)iwq;
+console.log(biggest);
